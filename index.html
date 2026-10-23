@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso ao Sistema</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="icone">🔐</div>
+
+      <h1>Acesso ao Sistema</h1>
+
+      <p>Bem-vindo! Clique no botão abaixo para acessar o sistema.</p>
+
+      <button onclick="iniciarSistema()">Entrar no sistema</button>
+    </div>
+
+    <script>
+      function iniciarSistema() {
+        let senhaDoSistema = 'senha123';
+
+        let senha = prompt('Digite a senha do sistema:');
+
+        if (senhaDoSistema == senha) {
+          alert('Acesso ao sistema garantido');
+        }
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: #ffffff;
+        width: 90%;
+        max-width: 400px;
+        padding: 40px 30px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .icone {
+        font-size: 55px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: #1e293b;
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #64748b;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      button {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        padding: 14px 20px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #1d4ed8;
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </body>
+</html>
